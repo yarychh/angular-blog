@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { delay } from 'rxjs';
+import { FormType } from 'src/app/shared/enums/form-type-enum';
 import { Post } from 'src/app/shared/interfaces/interfaces';
 import { PostService } from 'src/app/shared/services/post.service';
-import { FormType } from '../shared/components/admin-layout/form-type-enum';
 
 
 @Component({
@@ -45,20 +45,6 @@ export class PostFormComponent implements OnInit {
       this.router.navigate(['/posts-list']);
     });
   }
-
-  // public create(): void {
-  //   if (this.form.invalid) return;
-  
-  //   this.postService.createPost(this.form.value).subscribe(()=>{
-  //     this.router.navigate(['/posts-list'])
-  //   });
-  // }
-
-  // public update(data: any): void {
-  //   this.postService.editPost(data).subscribe((post)=>{
-  //     this.router.navigate(['/posts-list']);
-  //   }); 
-  // }
 
   private initForm(): void {
     this.form = new FormGroup ({

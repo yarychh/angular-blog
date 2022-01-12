@@ -1,17 +1,31 @@
 <div class="container">
-    <form [formGroup]="form" (ngSubmit)="submit()">
-        <h2 class="title">Register new User</h2>
+    <form 
+    [formGroup]="form" 
+    (ngSubmit)="submit()">
+        <h2 class="title">
+            Register new User
+        </h2>
         
         <div class="form-control">
 
-            <label for="name">Name</label>
-            <input type="name" id="name" formControlName='name'>
+            <label for="name">
+                Name
+            </label>
+            <input 
+            type="name" 
+            id="name" 
+            formControlName='name'
+            />
             
             <div
             *ngIf="this.form.controls['name'].touched == true && this.form.controls['name'].status == 'INVALID'"
             class="validation">
-            <small *ngIf="form.get('name')?.errors?.['required']">Cannot be empty!</small>
-            <small *ngIf="form.get('name')?.errors?.['minlength']">Name should be at least {{ form.controls['name'].errors?.['minlength'].requiredLength}} characters long</small>
+                <small *ngIf="form.get('name')?.errors?.['required']">
+                    Cannot be empty!
+                </small>
+                <small *ngIf="form.get('name')?.errors?.['minlength']">
+                    Name should be at least {{ form.controls['name'].errors?.['minlength'].requiredLength}} characters long
+                </small>
             </div>
     
 
@@ -19,14 +33,24 @@
         
         <div class="form-control">
 
-            <label for="email" >Email</label>
-            <input type="email" id="email" formControlName='email'>
+            <label for="email" >
+                Email
+            </label>
+            <input 
+            type="email" 
+            id="email" 
+            formControlName='email'
+            />
             
             <div
             *ngIf="this.form.controls['email'].touched == true && this.form.controls['email'].status == 'INVALID'"
             class="validation">
-            <small *ngIf="form.get('email')?.errors?.['required']">Cannot be empty!</small>
-            <small *ngIf="form.get('email')?.errors?.['email']">Enter valid email!</small>
+                <small *ngIf="form.get('email')?.errors?.['required']">
+                    Cannot be empty!
+                </small>
+                <small *ngIf="form.get('email')?.errors?.['email']">
+                    Enter valid email!
+                </small>
             </div>
     
 
@@ -34,14 +58,24 @@
 
         <div class="form-control">
 
-            <label for="password">Password</label>
-            <input type="password" id="password" formControlName='password'>
+            <label for="password">
+                Password
+            </label>
+            <input 
+            type="password" 
+            id="password" 
+            formControlName='password'
+            />
             
             <div
             *ngIf="this.form.controls['password'].touched == true && this.form.controls['password'].status == 'INVALID'"
             class="validation">
-            <small *ngIf="form?.get('password')?.errors?.['required']">You need password to register</small>
-            <small *ngIf="form?.get('password')?.errors?.['minlength']">Password should be at least {{ form.controls['password'].errors?.['minlength'].requiredLength}} characters long</small>
+                <small *ngIf="form?.get('password')?.errors?.['required']">
+                    You need password to register
+                </small>
+                <small *ngIf="form?.get('password')?.errors?.['minlength']">
+                    Password should be at least {{ form.controls['password'].errors?.['minlength'].requiredLength}} characters long
+                </small>
             </div>
     
 
@@ -55,9 +89,12 @@
             <div
             *ngIf="this.form.controls['repeatPassword'].touched == true && this.form.controls['repeatPassword'].status == 'INVALID'"
             class="validation">
-            <small *ngIf="form.get('repeatPassword')?.errors?.['required']">You need password to register</small>
-            <small *ngIf="form.get('repeatPassword')?.errors?.['passwordMatchFail']">Your passwords must match! </small>
-            <!-- <small *ngIf="form.get('repeatPassword')?.errors?.['minlength']">Password should be at least {{ form.controls['repeatPassword'].errors?.['minlength'].requiredLength}} characters long</small> -->
+                <small *ngIf="form.get('repeatPassword')?.errors?.['required']">
+                    You need password to register
+                </small>
+                <small *ngIf="form.get('repeatPassword')?.errors?.['passwordMatchFail']">
+                    Your passwords must match! 
+                </small>
             </div>
     
 
