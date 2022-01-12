@@ -1,13 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
-import { AdminLayoutComponent } from './shared/components/admin-layout/admin-layout.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { PostFormComponent } from './post-form/post-form.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-import { MainLayoutComponent } from "../shared/components/main-layout/main-layout.component";
-import { FormType } from "./shared/components/admin-layout/form-type-enum";
+import { MainLayoutComponent } from "../views/main-layout/main-layout.component";
+import { FormType } from "../shared/enums/form-type-enum";
+
 
 @NgModule({
     imports:[
@@ -29,7 +29,6 @@ import { FormType } from "./shared/components/admin-layout/form-type-enum";
         RouterModule
     ],
     declarations: [
-      AdminLayoutComponent,
       LoginPageComponent,
       RegisterPageComponent,
       PostFormComponent

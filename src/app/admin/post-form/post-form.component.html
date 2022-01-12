@@ -1,30 +1,50 @@
 
 
-<div class="container" *ngIf="post || formType === pageFormTypes.CREATE; else loader">
+<div 
+class="container" 
+*ngIf="post || formType === pageFormTypes.CREATE; else loader">
     
     <form [formGroup]="form" (submit)="submit()">
-        <h2 *ngIf="formType === pageFormTypes.UPDATE" class="title">Edit Post</h2>
-        <h2 *ngIf="formType === pageFormTypes.CREATE" class="title">Create Post</h2>
+        <h2 class="title">
+            {{ formType === pageFormTypes.CREATE ? 'Create' : 'Update' }}
+        </h2>
 
         <div class="form-control">
-            <label for="post-title">Post title:</label>
-            <input type="text" id='post-title' formControlName='title'>
+            <label for="post-title">
+                Post title:
+            </label>
+            <input 
+            type="text" 
+            id='post-title' 
+            formControlName='title'
+            />
         </div> 
         
         <div class="form-control">
-            <label for="post-author">Post author:</label>
-            <input type="text" id='post-author' formControlName='author'>
+            <label for="post-author">
+                Post author:
+            </label>
+            <input 
+            type="text" 
+            id='post-author' 
+            formControlName='author'
+            />
         </div>
         
         <div class="form-control">
-            <label for="post-text">Post text:</label>
-            <input type="text" id='post-text' formControlName='text'>
+            <label for="post-text">
+                Post text:
+            </label>
+            <input 
+            type="text" 
+            id='post-text' 
+            formControlName='text'
+            />
         </div>
 
-        <!-- <button *ngIf="formType === pageFormTypes.UPDATE" (click)="update(this.form.value)">Update</button>
-        <button *ngIf="formType === pageFormTypes.CREATE" (click)="create()">Create</button> -->
-
-        <button type="submit">{{ formType === pageFormTypes.CREATE ? 'Create' : 'Update' }}</button>
+        <button type="submit">
+            {{ formType === pageFormTypes.CREATE ? 'Create' : 'Update' }}
+        </button>
 
     </form>
 </div>

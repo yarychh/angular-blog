@@ -6,10 +6,20 @@
     <small>{{ post.author}}</small>
 
     <div class="buttons">
-        <button
-        [routerLink]="['/post', post.id]"
-        >View post</button>
-        <button *ngIf="this.authService.isAuthenticated()" [routerLink]="['/admin' ,'post', post.id, 'edit']">Edit post</button>
-        <button *ngIf="this.authService.isAuthenticated()" (click)='remove()'>Delete post</button>
+        <button [routerLink]="['/post', post.id]">
+            View post
+        </button>
+
+        <button 
+            *ngIf="this.authService.isAuthenticated()" 
+            [routerLink]="['/admin' ,'post', post.id, 'edit']">
+            Edit post
+        </button>
+        
+        <button 
+            *ngIf="this.authService.isAuthenticated()" 
+            (click)='remove()'>
+            Delete post
+        </button>
     </div>
 </div>
