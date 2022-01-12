@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "name": "lala",
+      "email": "alala@ghmail.com",
+      "password": "papapapapap",
+      "id": 12334
+    },
+    {
+      "name": "aekrvjbaerv",
+      "email": "admin@admin.google",
+      "password": "huihuihui",
+      "id": 299
+    },
+    {
+      "name": "aekrvjbaerv",
+      "email": "if@gmail.com",
+      "password": "lalalala",
+      "id": 9530
+    },
+    {
+      "name": "aqervgqe",
+      "email": "if@gmail.com",
+      "password": "123123123",
+      "id": 1077
+    }
+  ],
+  "posts": [
+    {
+      "title": "How to suck dicks good and smooth sriegbnvqlierv lalalalalal",
+      "text": "Just put it in your mouth and suck gently! Polly said this works well! efuhvbqueryvb",
+      "author": "Girls",
+      "id": 5695,
+      "date": "2022-01-11T15:31:06.204Z"
+    },
+    {
+      "title": "how am i supposed to finish this?",
+      "text": "this services are crappy and my head is boiling lalalalal",
+      "author": "MIke",
+      "id": 77,
+      "date": "2022-01-11T15:30:51.346Z"
+    },
+    {
+      "title": "last test for create component",
+      "text": "So the post is created and edited!",
+      "author": "Mike",
+      "id": 6483,
+      "date": "2022-01-11T14:29:39.553Z"
+    }
+  ]
+}

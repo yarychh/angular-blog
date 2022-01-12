@@ -1,0 +1,28 @@
+<div class="header">
+    
+    <h1 class="title" routerLink="">Angular Blog <span *ngIf="this.authService.isAuthenticated()">admin</span></h1>
+
+    
+    
+    <div class="topnav">
+        <a *ngIf="!this.authService.isAuthenticated()" routerLink="/admin/login">Login</a>
+        <a *ngIf="this.authService.isAuthenticated()" (click)="logout($event)">Logout</a>
+        <a routerLink="posts-list">Posts</a>
+        <a *ngIf="this.authService.isAuthenticated()" [routerLink]="['/admin','create']">Create</a>
+    </div>
+
+
+</div>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+     
+    <div class="lownav">
+        <a routerLink="admin/login">Login</a>
+        <a routerLink="posts-list">Posts</a>
+    </div>
+
+</div>

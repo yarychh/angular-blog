@@ -1,0 +1,30 @@
+.container{
+    border: 2px solid rgb(153, 81, 153);
+    margin: 10px;
+    height: auto;
+    display: flex;
+    // justify-content: left;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 1.5rem;
+}
+button{
+    margin: 0.5%;
+    border: none;
+    background-color: rgb(153, 81, 153);
+    color: #fff;
+    height: 2rem;
+    width: auto;
+    padding: 0.5rem;
+
+}
+p{
+    margin: 4% auto;
+}
+img{
+    width: auto;
+    height: 70vh;
+    object-fit: contain;
+    margin: 0.5%;
+
+}

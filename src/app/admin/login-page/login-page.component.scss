@@ -1,0 +1,39 @@
+.container{
+    border: 2px solid rgb(153, 81, 153);
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    margin: 3% auto;
+    width: 80vw;
+}
+form{
+    width: 70vw;
+}
+.title{
+    margin-bottom: 3%;
+}
+input{
+    display: block;
+    width: 70vw;
+
+}
+.validation{
+    font-weight: bold;
+    color: red;
+
+}
+button{
+    margin:1% auto;
+    display: inline;
+    width: 45%;
+    background-color: rgb(153, 81, 153);
+    border: none;
+    color: #fff;
+    height: 5vh;
+    cursor: pointer;
+    
+}
+#register{
+    margin-left: 7vw;
+
+}

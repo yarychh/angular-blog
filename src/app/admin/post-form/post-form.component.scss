@@ -1,0 +1,40 @@
+@import "~spinthatshit/src/loaders";
+
+.container{
+    border: 2px solid rgb(153, 81, 153);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1%;
+    margin: 3% auto;
+    width: 80vw;
+}
+
+input{
+    display: block;
+    width: 70vw;
+
+}
+
+#post-text{
+    height: 40vh;
+}
+
+button{
+    margin:1% auto;
+    display: inline;
+    width: 45%;
+    background-color: rgb(153, 81, 153);
+    border: none;
+    color: #fff;
+    height: 5vh;
+    cursor: pointer;
+    
+}
+.loader{
+    // text-align: center;
+    // margin-top: 4rem;
+    @include loader03($size: 100px, $duration: 1s, $align: center, $color: rgb(153, 81, 153));
+    margin-top: calc(50vh - 100px);
+    // justify-content: center;
+}

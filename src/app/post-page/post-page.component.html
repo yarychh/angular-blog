@@ -1,0 +1,13 @@
+<div *ngIf="post" class="container">
+    <h1>{{ post.title }}</h1>
+    <small>{{ post.date | date}}</small>
+    <small>{{ post.author }}</small>
+
+    <p>{{ post.text }}</p>
+
+
+    <div class="buttons">
+        <button routerLink="/posts-list">Back to posts</button>
+        <button routerLink="/" id='button-main'>Main</button>
+    </div>
+</div>

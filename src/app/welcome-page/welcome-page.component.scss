@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+img{
+    width: auto;
+    height: 70vh;
+}
+button{
+    margin: 2%;
+    display: inline;
+    width: 45%;
+    background-color: rgb(153, 81, 153);
+    border: none;
+    color: #fff;
+    height: 10vh;
+    cursor: pointer;
+}
+.buttons{
+    width: 40%;
+    justify-content: space-between;
+}
+p{
+    text-align: center;
+}
